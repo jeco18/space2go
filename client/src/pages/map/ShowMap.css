@@ -1,0 +1,38 @@
+.card {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  label {
+    width: max-content;
+    color: slateblue;
+    font-size: 13px;
+    border-bottom: 2px solid gray;
+    margin: 3px 1px;
+    font-weight: 800;
+    }
+    .place{
+        font-size: 17px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: crimson;
+    }
+
+    .desc {
+        font-size: 14px;
+    }
+    
+    .stars {
+        color: goldenrod;
+    }
+    
+    .username {
+        font-size: 14px;
+    }
+    
+    .date {
+        font-size: 12px;
+    }
