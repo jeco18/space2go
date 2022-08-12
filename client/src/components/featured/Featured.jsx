@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import "./featured.css";
 
 const Featured = () => {
   const { data, loading, error } = useFetch(
-    "/hotels/countByCity?cities=boracay,bohol,palawan"
+    "/hotels/countByCity?cities=Boracay,Bohol,Palawan"
   );
 
   return (
@@ -13,6 +14,7 @@ const Featured = () => {
       ) : (
         <>
           <div className="featuredItem">
+          <Link to='/boracay'>
             <img
               src="https://thumbs.dreamstime.com/b/boracay-island-tropical-diniwid-beach-philippines-view-towards-mainland-51148010.jpg"
               alt=""
@@ -22,6 +24,7 @@ const Featured = () => {
               <h1>Boracay</h1>
               <h2>{data[0]} properties</h2>
             </div>
+            </Link>
           </div>
 
           <div className="featuredItem">

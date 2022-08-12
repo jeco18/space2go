@@ -1,6 +1,7 @@
 import useFetch from "../../hooks/useFetch";
 import "./propertyList.css";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 
 
@@ -88,16 +89,46 @@ const PropertyList = () => {
       </Rerousel> */}
         <Slider {...settings  }>
         {images.map((img,i) =>(
-          <div className="pListItem"><img
+          <div className="pListItem">
+          <Link to="/allHotels">
+          <img
           src={img}
           alt=""
           className="pListImg p-2"
         /><div className="pListTitles px-2">
-        <h1>{data[i]?.type}</h1>
-        <h2>{data[i]?.count} {data[i]?.type}</h2>
-      </div></div>
+        
+          <h1>{data[i]?.type}</h1>
+          
+          <h2>{data[i]?.count} {data[i]?.type}</h2>
+        
+      </div></Link></div>
         ))}
-      </Slider> 
+
+      </Slider>
+        {/* <h2>Auto Play</h2>
+        <Slider {...settings}>
+          <div>
+            <h3></h3>
+          </div>
+          <div>
+            <h3>2</h3>
+          </div>
+          <div>
+            <h3>3</h3>
+          </div>
+          <div>
+            <h3>4</h3>
+          </div>
+          <div>
+            <h3>5</h3>
+          </div>
+          <div>
+            <h3>6</h3>
+          </div>
+        </Slider> */}
+
+      
+
       </div>
   );
 };

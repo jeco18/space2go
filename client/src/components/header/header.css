@@ -2,6 +2,11 @@
   display: flex;
   justify-content: center;
   position: relative;
+  margin-top: 70px;
+  background: 
+    url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-size: cover;
+  background-position:bottom;
 }
 
 .headerContainer {
@@ -12,7 +17,7 @@
 
 .headerTitle{
   font-size: 3.75rem; 
-  color: #444444;
+  text-shadow: 2px 2px black;
 }
 
 .headerContainer.listMode {
@@ -88,7 +93,7 @@
 .headerSearch {
   height: 60px;
   background-color: white;
-  border: 1px solid #e6e6e6;
+  border: 3.5px solid #3B82F6;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -109,6 +114,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  
 }
 
 .headerSearchInput {
@@ -117,8 +123,11 @@
 }
 
 .headerSearchText {
-  color: lightgray;
+  color: rgb(134, 126, 126);
   cursor: pointer;
+}
+.span{
+  text-shadow: 1.5px 1.5px black;
 }
 
 .date {
@@ -199,6 +208,20 @@
   }
 }
 
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-size: cover;
+  background-position: center;
+}
+
 @media screen and (max-width: 640px) {
   .headerContainer {
     padding: 0 20px 0 20px;
@@ -214,6 +237,7 @@
   }
   .headerSearch {
     display: block;
+    width: 350px;
     height: 140px;
   }
   .headerSearchItem {

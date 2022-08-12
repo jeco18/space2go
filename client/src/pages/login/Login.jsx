@@ -39,10 +39,16 @@ const Login = () => {
   return (
     <div>
       <Navbar />
-      <div className="login">
-        <div className="grid grid-cols-2 justify-center items-center h-screen bg-[url('https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500')] h-screen bg-cover bg-center">
-          <h2 className="self-start -mt-12 text-white text-9xl font-bold self-center ml-12">Login</h2>
-          <div class="flex flex-col -mt-32 ml-20 w-full max-w-md px-4 py-8 bg-white rounded-lg shadow sm:px-6 md:px-8 lg:px-10">
+
+      <div >
+        <div className="grid grid-cols-2 justify-center items-center  login h-screen bg-cover bg-center">
+          <h2 className=" start mt-12 text-[#6439FF] text-7xl font-bold self-center ml-12 ">Start planning your next vacation</h2>
+         
+
+      
+        
+          <div class="flex flex-col mt-44 ml-20 w-full max-w-md px-4 py-8 bg-white rounded-lg shadow sm:px-6 md:px-8 lg:px-10">
+
             <div class="self-center font-bold mb-6 text-xl text-gray-700 sm:text-2xl">
               Login Your Account
             </div>
@@ -97,7 +103,7 @@ const Login = () => {
 
             </div>
           </div>
-        </div>
+        
 
 
         {/* <div className="lContainer">
@@ -120,8 +126,11 @@ const Login = () => {
         </button>
         {error && <span>{error.message}</span>}
       </div> */}
-      <Footer />
-      </div>
+      
+      
+    
+    </div>
+    </div>
     </div>
   );
 };

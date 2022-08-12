@@ -12,6 +12,8 @@ import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import Checkout from "./components/paypal/Checkout";
 import ShowMap from "./pages/map/ShowMap";
+import Boracay from "./pages/city/Boracay";
+import AllHotels from "./pages/accomodation/AllHotels";
 // import NewAccount from "./pages/newAccount/NewAccount";
 
 
@@ -37,6 +39,8 @@ function App() {
         <Route path="/showmap" element={<ShowMap/>}/>
         <Route path="/help" element={<Help/>}/>
         <Route path="/checkout" element={<Checkout/>}/>
+        <Route path="/boracay" element={<Boracay/>}/>
+        <Route path="/allHotels" element={<AllHotels/>}/>
         
       </Routes>
     </BrowserRouter>

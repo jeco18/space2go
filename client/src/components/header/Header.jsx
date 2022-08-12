@@ -69,38 +69,40 @@ const Header = ({ type }) => {
         <div className="headerList flex flex-row lg:gap-8 justify-around">
         <Link  to={"/"} >
           <div className="headerListItem router-link-exact-active">
-            <FontAwesomeIcon icon={faHouse} />
-            <span>Home</span>
+            <FontAwesomeIcon icon={faHouse} className="text-white span"/>
+            <span className="text-white span">Home</span>
           </div>
           </Link> 
-          <Link to={"/hotels"}>
-          <div className="headerListItem">
-            <FontAwesomeIcon icon={faCouch} />
-            <span>All Stays</span>
-          </div>
-          </Link>
+          
+            <button onClick={handleSearch} className="headerListItem">
+              <FontAwesomeIcon icon={faCouch} className="text-white span"/>
+              <span className="text-white span">All Stays</span>
+            </button>
+          
+          
           <Link to={"/showmap"}>
           <div className="headerListItem">
-            <FontAwesomeIcon icon={faLocationDot} />
-            <span>Show Map</span>
+            <FontAwesomeIcon icon={faLocationDot} className="text-white span" />
+            <span className="text-white span">Show Map</span>
+
           </div>
           </Link>
           <Link to={"/about"}>
           <div className="headerListItem">
-            <FontAwesomeIcon icon={faLaptopCode} />
-            <span>About</span>
+            <FontAwesomeIcon icon={faLaptopCode} className="text-white span"/>
+            <span className="text-white span">About</span>
           </div>
           </Link>
           <Link to={"/help"}>
           <div className="headerListItem">
-            <FontAwesomeIcon icon={faCircleInfo} />
-            <span>Help</span>
+            <FontAwesomeIcon icon={faCircleInfo} className="text-white span"/>
+            <span className="text-white span">Help</span>
           </div>
           </Link>
         </div>
         {type !== "list" && (
           <>
-            <h1 className="headerTitle font-bold">
+            <h1 className="headerTitle font-bold text-violet-500">
             Experience the World <br/> from a Different Perspective
             </h1>
             <p className="headerDesc text-2xl">

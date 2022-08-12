@@ -17,7 +17,7 @@ const Help = (props) => {
 
     return (
         <div 
-            className="space-y-3 mt-5 overflow-hidden border-b"
+            className="space-y-3 mt-5 overflow-hidden border-b "
             key={idx}
             onClick={handleOpenAnswer}
         >
@@ -77,7 +77,7 @@ export default () => {
     return (
         <div>
             <Navbar />
-        <section className="leading-relaxed max-w-screen-xl mt-12 mx-auto px-4 lg:px-8">
+        <section className="leading-relaxed max-w-screen-xl mt-[100px] mx-auto px-4 lg:px-8 ">
             <div className="space-y-3 text-center">
                 <h1 className="text-3xl text-gray-800 font-semibold">
                     Frequently Asked Questions
