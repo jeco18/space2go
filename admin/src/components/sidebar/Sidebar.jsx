@@ -14,7 +14,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="top">
         <Link to="/" style={{ textDecoration: "none" }}>
-          <span className="logo">🔮Space<span>2G♾</span></span>
+          <p className=" text-violet-500 font-bold">🔮Space<span>2G♾</span></p>
         </Link>
       </div>
       <hr />

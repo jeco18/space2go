@@ -41,7 +41,7 @@ const Login = () => {
       <div className="lContainer flex flex-row justify-center items-center gap-2 p-3 bg-white rounded-md shadow-2xl ">
         <div>
           <img src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" alt="" 
-          className="h-[300px] w-[300px]"/>
+          className="md:h-[300px] md:w-[300px] w-[150px] h-[150px]"/>
         </div>
         <div className="flex flex-col gap-5 p-3">
             <p className="font-bold">Login as Admin User</p>

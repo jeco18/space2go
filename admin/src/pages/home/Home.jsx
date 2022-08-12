@@ -10,7 +10,7 @@ const Home = () => {
       <Sidebar />
       <div className="homeContainer">
         <Navbar />
-        <div className="widgets">
+        <div className="widgets flex flex-col sm:flex-row">
           <Widget type="user" />
           <Widget type="hotel" />
           <Widget type="room" />

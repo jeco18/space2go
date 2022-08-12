@@ -41,13 +41,13 @@ const Login = () => {
       <Navbar />
 
       <div >
-        <div className="grid grid-cols-2 justify-center items-center  login h-screen bg-cover bg-center">
-          <h2 className=" start mt-12 text-[#6439FF] text-7xl font-bold self-center ml-12 ">Start planning your next vacation</h2>
+        <div className="flex flex-col lg:flex-row justify-center items-center  login h-screen bg-cover bg-center">
+          <h2 className=" start mt-12 text-[#6439FF] text-4xl md:text-7xl font-bold self-center ml-12 md:w-[800px] ">Start planning your next vacation</h2>
          
 
       
         
-          <div class="flex flex-col mt-44 ml-20 w-full max-w-md px-4 py-8 bg-white rounded-lg shadow sm:px-6 md:px-8 lg:px-10">
+          <div class="flex flex-col mt-10  lg:mt-44  w-full max-w-md px-4 py-8 bg-white rounded-lg shadow sm:px-6 md:px-8 lg:px-10">
 
             <div class="self-center font-bold mb-6 text-xl text-gray-700 sm:text-2xl">
               Login Your Account
