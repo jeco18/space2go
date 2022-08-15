@@ -11,7 +11,7 @@ const Footer = () => {
                     <a href="#" class="mr-4 hover:underline ">Developers:</a>
                 </li>
                 <li>
-                    <a href="https://princeerq98.github.io/Personal%20Portfolio_Prince%20Quiton/index.html" class="mr-4 hover:underline">👨‍💻 Prince</a>
+                    <a href="https://quiton-portfolio.vercel.app/" class="mr-4 hover:underline">👨‍💻 Prince</a>
                 </li>
                 <li>
                     <a href="https://marvin-portfolio.vercel.app/" class="mr-4 hover:underline">👨‍💻 Marvin</a>
