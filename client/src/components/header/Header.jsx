@@ -80,13 +80,13 @@ const Header = ({ type }) => {
             </button>
           
           
-          <Link to={"/showmap"}>
+          <a href="http://localhost:3003/">
           <div className="headerListItem">
             <FontAwesomeIcon icon={faLocationDot} className="text-white span" />
             <span className="text-white span">Show Map</span>
 
           </div>
-          </Link>
+          </a>
           <Link to={"/about"}>
           <div className="headerListItem">
             <FontAwesomeIcon icon={faLaptopCode} className="text-white span"/>
@@ -108,7 +108,7 @@ const Header = ({ type }) => {
             <p className="headerDesc text-2xl">
             Plan and Enjoy Travel Like Never Before in the Best Vacation Rentals at the Best Price.
             </p>
-            {user && <button className="headerBtn"  > 📩 Inbox</button>}
+            {user && <a href="http://localhost:3004/"><button className="headerBtn"  > 📩 Inbox</button></a>}
             <div className="headerSearch shadow-md">
               <div className="headerSearchItem text-black">
                 <FontAwesomeIcon icon={faBed} className="headerIcon" />

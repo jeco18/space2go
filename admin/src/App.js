@@ -32,7 +32,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/">
-            <Route path="login" element={<Login />} />
+            <Route path="admin-login" element={<Login />} />
             <Route
               index
               element={

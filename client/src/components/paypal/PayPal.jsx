@@ -26,7 +26,7 @@ export default function Paypal() {
         onApprove: async (data, actions) => {
           const order = await actions.order.capture();
           
-          navigate('/')
+          
           swal({
             title: "Thank you!",
             text: "Successful Transaction!",
@@ -43,7 +43,7 @@ export default function Paypal() {
   }, []);
 
   return (
-    <div className="bg-blue-400 min-h-[100px] p-3" ref={paypal}>
+    <div className="bg-blue-400 min-h-[100px] p-3 rounded-md" ref={paypal}>
        
     </div>
   );

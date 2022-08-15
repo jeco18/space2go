@@ -44,7 +44,7 @@ const Register = () => {
 				error.response.status >= 400 &&
 				error.response.status <= 500
 			) {
-				setError(error.response.data.message);
+				alert("Account is already registered!");
 			}
 		}
 	};
@@ -193,7 +193,7 @@ const Register = () => {
 								required	
 							/>
 						</div>
-						{error && <div >{error}</div>}
+	{/*error && <div ><p>Account Existing!</p></div>*/}
 						<button type="submit" className="bg-violet-500 text-white p-2 rounded-md">
 							Sign Up
 						</button>
